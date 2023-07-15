@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home.views import *
+from task2.views import ReviewView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
+    path('reviews/', ReviewView.as_view(), name="reviews"),
 ]
