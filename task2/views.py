@@ -1,4 +1,4 @@
-from .forms import ReviewForm
+from .forms import *
 from django.views.generic.edit import FormView
 from django.http import HttpResponse
  
@@ -13,4 +13,4 @@ class ReviewView(FormView):
         return HttpResponse(msg)
     
 
-    
+    # celery -A test_celery worker -l INFO

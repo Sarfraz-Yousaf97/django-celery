@@ -21,5 +21,3 @@ def send_review_email(name, email, review):
     )
     return email.send(fail_silently=False)
 
-
-print(settings.DEFAULT_FROM_EMAIL, "Lenarfo")
